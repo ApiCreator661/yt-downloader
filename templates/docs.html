@@ -475,7 +475,7 @@
                 <button class="copy-btn" onclick="copyToClipboard(this)">
                     <i class="fas fa-copy"></i>
                 </button>
-                <pre class="endpoint">GET https://your-api.onrender.com/download?url=YOUTUBE_VIDEO_URL</pre>
+                <pre class="endpoint">GET https://api-yt-downloader-zbar.onrender.com/download?url=YOUTUBE_VIDEO_URL</pre>
             </div>
 
             <div style="margin-top: 1.5rem;">
@@ -503,7 +503,7 @@
                     <button class="copy-btn" onclick="copyToClipboard(this)">
                         <i class="fas fa-copy"></i>
                     </button>
-                    <pre>curl "https://your-api.onrender.com/download?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ"</pre>
+                    <pre>curl "https://api-yt-downloader-zbar.onrender.com/download?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ"</pre>
                 </div>
             </div>
 
@@ -512,7 +512,7 @@
                     <button class="copy-btn" onclick="copyToClipboard(this)">
                         <i class="fas fa-copy"></i>
                     </button>
-                    <pre>const response = await fetch('https://your-api.onrender.com/download?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+                    <pre>const response = await fetch('https://api-yt-downloader-zbar.onrender.com/download?url=https://www.youtube.com/watch?v=dQw4w9WgXcQ');
 const data = await response.json();
 console.log(data);</pre>
                 </div>
@@ -525,7 +525,7 @@ console.log(data);</pre>
                     </button>
                     <pre>import requests
 
-url = "https://your-api.onrender.com/download"
+url = "https://api-yt-downloader-zbar.onrender.com/download"
 params = {"url": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"}
 
 response = requests.get(url, params=params)
@@ -636,7 +636,7 @@ print(data)</pre>
     </div>
 
     <script>
-        const API_BASE_URL = '';
+        const API_BASE_URL = 'https://api-yt-downloader-zbar.onrender.com';
 
         document.querySelectorAll('.nav-link').forEach(link => {
             link.addEventListener('click', function(e) {
